@@ -1,0 +1,192 @@
+$main-color: rgb(15, 17, 19);
+$accent-color: rgb(42, 50, 54);
+$accent-color-lighter: rgb(20, 24, 26);
+$border-color: rgb(132, 139, 143);
+
+body {
+    background-color: $main-color;
+    height: 100vh;
+    
+    .top {
+        margin-inline: 25px;
+        .brick {
+            height: 70px;
+            width: 100%;
+            border-radius: 10px;
+            background-color: $accent-color;
+            
+        }
+
+        .info {
+            margin-top: -45px;
+            font-family: sans-serif;
+
+            color: white;
+            margin-inline: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+
+            .first {
+                display: flex;
+                align-items: end;
+                gap: 20px;
+
+                h2 {
+
+                }
+            }
+
+            .second {
+                display: flex;
+                gap: 20px;
+
+                .create:hover {
+                    border-color: white;
+                }
+
+                .join {
+                    border: none !important;
+                    background-color: rgb(17, 91, 202);
+                }
+
+                .join:hover {
+                    background-color: rgb(52, 126, 237);
+                }
+
+                .dotdotdot:hover {
+                    border-color: white;
+                }
+
+                .but {
+                    display: flex;
+                    align-items: center;
+                    padding: 15px;
+                    border: 1px solid $border-color;
+                    height:fit-content;
+                    border-radius: 50px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        margin-top: 30px;
+        margin-inline: 25px;
+        display: flex;
+        height: 1000px;
+
+        .right {
+            width: 75%;
+
+
+            .top {
+
+            }
+
+            .bottom {
+                display: flex;
+                flex-direction: column;
+
+                hr {
+                    width: 100%;
+                    border-color: #7c7c87;
+                }
+                .post {
+                    font-family: sans-serif;
+                    color: white;
+                    width: 100%;
+                    border-radius: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .top {
+                        margin-inline: 15px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .user-and-time {
+                            display: flex;
+                            align-items: center;
+                            gap:20px;
+                            margin: 0;
+
+                            p {
+                                margin: 0;
+                                color: #adadc1;
+                                cursor: pointer;
+                            }
+
+                            p:hover {
+                                color: #7171c1;
+                            }
+
+                            h4 {
+                                margin: 0;
+                                color:rgb(110, 106, 135);
+                                font-weight: 400;
+                            }
+                        }
+                        
+
+                        .dotdotdot:hover {
+                            background-color: #5b5b64;
+                        }
+                        
+                    }
+
+                    .text {
+                        margin-inline: 15px;
+                        font-weight:normal;
+                        font-size:larger;
+                    }
+                    .but {
+                        display: flex;
+                        align-items: center;
+                        padding: 10px;
+                        height:fit-content;
+                        border-radius: 50px;
+                        cursor: pointer;
+                    }
+                    .bottom-post {
+                        display: flex;
+                        margin-inline: 15px;
+                        align-items: center;
+                        gap: 20px;
+
+                        .but {
+                            background-color: #5b5b64;
+                        }
+                    }
+                }
+
+                .post:hover {
+                    background-color: $accent-color-lighter;
+                }
+            }
+        }
+
+        .left {
+            font-family: sans-serif;
+            color: white;
+            font-size: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            width: 25%;
+            height: 1000px;
+            background-color: rgb(8, 9, 10);
+
+            .title {
+                color: rgb(160, 178, 200);
+            }
+
+            .desc, .created, .public {
+                font-weight: 300;
+                color: rgb(118, 138, 162);
+            }
+        }
+    }
+}

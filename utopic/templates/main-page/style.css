@@ -1,0 +1,151 @@
+body {
+  background-color: rgb(15, 17, 19);
+  height: 100vh;
+}
+body .top {
+  margin-inline: 25px;
+}
+body .top .brick {
+  height: 70px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(42, 50, 54);
+}
+body .top .info {
+  margin-top: -45px;
+  font-family: sans-serif;
+  color: white;
+  margin-inline: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+body .top .info .first {
+  display: flex;
+  align-items: end;
+  gap: 20px;
+}
+body .top .info .second {
+  display: flex;
+  gap: 20px;
+}
+body .top .info .second .create:hover {
+  border-color: white;
+}
+body .top .info .second .join {
+  border: none !important;
+  background-color: rgb(17, 91, 202);
+}
+body .top .info .second .join:hover {
+  background-color: rgb(52, 126, 237);
+}
+body .top .info .second .dotdotdot:hover {
+  border-color: white;
+}
+body .top .info .second .but {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid rgb(132, 139, 143);
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 50px;
+  cursor: pointer;
+}
+body .bottom {
+  margin-top: 30px;
+  margin-inline: 25px;
+  display: flex;
+  height: 1000px;
+}
+body .bottom .right {
+  width: 75%;
+}
+body .bottom .right .bottom {
+  display: flex;
+  flex-direction: column;
+}
+body .bottom .right .bottom hr {
+  width: 100%;
+  border-color: #7c7c87;
+}
+body .bottom .right .bottom .post {
+  font-family: sans-serif;
+  color: white;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body .bottom .right .bottom .post .top {
+  margin-inline: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .bottom .right .bottom .post .top .user-and-time {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+}
+body .bottom .right .bottom .post .top .user-and-time p {
+  margin: 0;
+  color: #adadc1;
+  cursor: pointer;
+}
+body .bottom .right .bottom .post .top .user-and-time p:hover {
+  color: #7171c1;
+}
+body .bottom .right .bottom .post .top .user-and-time h4 {
+  margin: 0;
+  color: rgb(110, 106, 135);
+  font-weight: 400;
+}
+body .bottom .right .bottom .post .top .dotdotdot:hover {
+  background-color: #5b5b64;
+}
+body .bottom .right .bottom .post .text {
+  margin-inline: 15px;
+  font-weight: normal;
+  font-size: larger;
+}
+body .bottom .right .bottom .post .but {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 50px;
+  cursor: pointer;
+}
+body .bottom .right .bottom .post .bottom-post {
+  display: flex;
+  margin-inline: 15px;
+  align-items: center;
+  gap: 20px;
+}
+body .bottom .right .bottom .post .bottom-post .but {
+  background-color: #5b5b64;
+}
+body .bottom .right .bottom .post:hover {
+  background-color: rgb(20, 24, 26);
+}
+body .bottom .left {
+  font-family: sans-serif;
+  color: white;
+  font-size: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 25%;
+  height: 1000px;
+  background-color: rgb(8, 9, 10);
+}
+body .bottom .left .title {
+  color: rgb(160, 178, 200);
+}
+body .bottom .left .desc, body .bottom .left .created, body .bottom .left .public {
+  font-weight: 300;
+  color: rgb(118, 138, 162);
+}/*# sourceMappingURL=style.css.map */
