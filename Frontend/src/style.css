@@ -1,0 +1,125 @@
+/* Общий стиль */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../media/background_image.jpg'); /* Путь к изображению */
+    background-size: cover; /* Масштабирует изображение, чтобы покрыть весь экран */
+    background-position: center; /* Центрирует изображение */
+    background-attachment: fixed; /* Закрепляет изображение при прокрутке */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Шапка */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #eee;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #444;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* Основной контент */
+main {
+    flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forum-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.forum-card {
+    flex: 1 1 calc(30% - 20px);
+    max-width: 300px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.forum-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.forum-card h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+}
+
+.forum-card p {
+    margin: 0;
+    color: #555;
+}
+
+/* Действие */
+.action {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 2px solid #eee;
+    font-size: 0.9rem;
+    color: #666;
+}
