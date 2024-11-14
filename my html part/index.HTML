@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Reddit</h1>
+        <input type="text" placeholder="Search..." class="search-bar">
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="menu">
+                <a href="">Home</a>
+                <a href="">Popular</a>
+            </nav>
+            
+            <div class="recent">
+                <h3>Recent Subreddits</h3>
+                <a href="">r/btd6</a>
+                <a href="">r/Minecraft</a>
+                <a href="">r/Programming</a>
+                <a href="">r/Technology</a>
+            </div>
+
+            <div class="other-posts">
+                <h3>Other Posts</h3>
+                <div class="post-link">
+                    <a href="">Made some little tree sprites</a>
+                    <p>14 hr. ago in r/Minecraft</p>
+                </div>
+                <div class="post-link">
+                    <a href="">The end poem made me cry</a>
+                    <p>5 hr. ago in r/Minecraft</p>
+                </div>
+                <div class="post-link">
+                    <a href="">Wanna hear a joke?</a>
+                    <p>2 days ago in r/Jokes</p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="post">
+                <div class="post-author">
+                    <img src="files/rwN0al9P6nYhGSQO-yIJb-FyF5xg-c2v61zjMom4c4E.png" alt="User Avatar" class="avatar">
+                    <div class="author-info">
+                        <h4>r/Minecraft • 14 hr. ago</h4>
+                        <p class="author-name">Best-Air3525</p>
+                    </div>
+                </div>
+                <h2>Made some little tree sprites</h2>
+                <div class="post-info">
+                    <span class="tag">Art</span>
+                </div>
+                <img src="files/made-some-little-tree-sprites-v0-4j2c1mil07yd1.webp" alt="Tree Sprites" class="post-image">
+                <div class="post-body">
+                    <p>This is an example post showing pixel art of various tree designs. Each tree has unique characteristics inspired by Minecraft's iconic blocky art style.</p>
+                </div>
+
+                <div class="post-interactions">
+                    <p>2.8K Upvotes</p>
+                    <p>43 Comments</p>
+                    <p>Share</p>
+                </div>
+            </div>
+            <section class="comments-section">
+                <div class="add-comment">
+                    <textarea id="new-comment" placeholder="Add a comment..."></textarea>
+                    <button type="button" id="submit-comment">Submit</button>
+                </div>
+                <div class="sort-comments">
+                    <label for="sort">Sort by:</label>
+                    <select id="sort" name="sort">
+                      <option value="newest">Newest</option>
+                      <option value="oldest">Oldest</option>
+                      <option value="most-liked">Most Liked</option>
+                    </select>
+                </div>
+                <div class="search-comments">
+                    <input type="text" id="search-comments" placeholder="Search comments...">
+                </div>
+                <h2>Comments</h2>
+                <div class="comment">
+                    <div class="comment-author">
+                        <img src="files/rwN0al9P6nYhGSQO-yIJb-FyF5xg-c2v61zjMom4c4E.png" alt="Commenter Avatar" class="avatar">
+                        <span class="author-name">Commenter 1 • 14 hr. ago</span>
+                    </div>
+                    <p class="comment-text">This is a sample comment text.</p>
+                </div>
+    
+                <div class="comment">
+                    <div class="comment-author">
+                        <img src="files/rwN0al9P6nYhGSQO-yIJb-FyF5xg-c2v61zjMom4c4E.png" alt="Commenter Avatar" class="avatar">
+                        <span class="author-name">Commenter 2 • 14 hr. ago</span>
+                    </div>
+                    <p class="comment-text">Another comment here to show how it would look.</p>
+                </div>
+            </section>  
+        </main>
+    </div> 
+</body>
+</html>
