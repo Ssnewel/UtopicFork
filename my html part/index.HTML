@@ -3,105 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reddit</title>
+    <meta name="description" content="A Reddit-like clone showcasing posts and comments for a demo project.">
+    <meta name="keywords" content="Reddit, posts, comments, social media, web development">
+    <meta name="author" content="Your Name">
+    <title>Reddit Clone</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="files/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="header">
         <h1>Reddit</h1>
-        <input type="text" placeholder="Search..." class="search-bar">
+        <input type="text" placeholder="Search..." class="search-bar" aria-label="Search through posts">
     </header>
 
     <div class="container">
-        <aside class="sidebar">
+        <aside class="sidebar" aria-label="Sidebar navigation">
             <nav class="menu">
-                <a href="">Home</a>
-                <a href="">Popular</a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Popular</a></li>
+                </ul>
             </nav>
             
-            <div class="recent">
+            <section class="recent">
                 <h3>Recent Subreddits</h3>
-                <a href="">r/btd6</a>
-                <a href="">r/Minecraft</a>
-                <a href="">r/Programming</a>
-                <a href="">r/Technology</a>
-            </div>
+                <ul>
+                    <li><a href="#">r/btd6</a></li>
+                    <li><a href="#">r/Minecraft</a></li>
+                    <li><a href="#">r/Programming</a></li>
+                    <li><a href="#">r/Technology</a></li>
+                </ul>
+            </section>
 
-            <div class="other-posts">
+            <section class="other-posts">
                 <h3>Other Posts</h3>
-                <div class="post-link">
-                    <a href="">Made some little tree sprites</a>
+                <article class="post-link">
+                    <a href="#">Made some little tree sprites</a>
                     <p>14 hr. ago in r/Minecraft</p>
-                </div>
-                <div class="post-link">
-                    <a href="">The end poem made me cry</a>
+                </article>
+                <article class="post-link">
+                    <a href="#">The end poem made me cry</a>
                     <p>5 hr. ago in r/Minecraft</p>
-                </div>
-                <div class="post-link">
-                    <a href="">Wanna hear a joke?</a>
+                </article>
+                <article class="post-link">
+                    <a href="#">Wanna hear a joke?</a>
                     <p>2 days ago in r/Jokes</p>
-                </div>
-            </div>
+                </article>
+            </section>
         </aside>
 
-        <main class="content">
-            <div class="post">
-                <div class="post-author">
-                    <img src="files/rwN0al9P6nYhGSQO-yIJb-FyF5xg-c2v61zjMom4c4E.png" alt="User Avatar" class="avatar">
+        <main class="content" id="main-content">
+            <article class="post">
+                <header class="post-author">
+                    <img src="files/rwN0al9P6nYhGSQO-yIJb-FyF5xg-c2v61zjMom4c4E.png" alt="Avatar of Best-Air3525" class="avatar">
                     <div class="author-info">
                         <h4>r/Minecraft • 14 hr. ago</h4>
                         <p class="author-name">Best-Air3525</p>
                     </div>
-                </div>
+                </header>
                 <h2>Made some little tree sprites</h2>
                 <div class="post-info">
                     <span class="tag">Art</span>
                 </div>
-                <img src="files/made-some-little-tree-sprites-v0-4j2c1mil07yd1.webp" alt="Tree Sprites" class="post-image">
+                <img src="files/made-some-little-tree-sprites-v0-4j2c1mil07yd1.webp" alt="Pixel art of various tree designs" class="post-image">
                 <div class="post-body">
                     <p>This is an example post showing pixel art of various tree designs. Each tree has unique characteristics inspired by Minecraft's iconic blocky art style.</p>
                 </div>
 
-                <div class="post-interactions">
+                <footer class="post-interactions">
                     <p>2.8K Upvotes</p>
                     <p>43 Comments</p>
                     <p>Share</p>
-                </div>
-            </div>
+                </footer>
+            </article>
+
             <section class="comments-section">
-                <div class="add-comment">
-                    <textarea id="new-comment" placeholder="Add a comment..."></textarea>
-                    <button type="button" id="submit-comment">Submit</button>
-                </div>
+                <form class="add-comment" action="/submit-comment" method="POST">
+                    <label for="new-comment">Add a comment:</label>
+                    <textarea id="new-comment" name="comment" placeholder="Add a comment..." required></textarea>
+                    <button type="submit" id="submit-comment">Submit</button>
+                </form>
+                
                 <div class="sort-comments">
                     <label for="sort">Sort by:</label>
-                    <select id="sort" name="sort">
-                      <option value="newest">Newest</option>
-                      <option value="oldest">Oldest</option>
-                      <option value="most-liked">Most Liked</option>
+                    <select id="sort" name="sort" aria-label="Sort comments">
+                        <option value="newest">Newest</option>
+                        <option value="oldest">Oldest</option>
+                        <option value="most-liked">Most Liked</option>
                     </select>
                 </div>
+
                 <div class="search-comments">
-                    <input type="text" id="search-comments" placeholder="Search comments...">
+                    <label for="search-comments">Search comments:</label>
+                    <input type="text" id="search-comments" placeholder="Search comments..." aria-label="Search comments">
                 </div>
+
                 <h2>Comments</h2>
-                <div class="comment">
-                    <div class="comment-author">
-                        <img src="files/rwN0al9P6nYhGSQO-yIJb-FyF5xg-c2v61zjMom4c4E.png" alt="Commenter Avatar" class="avatar">
+                <article class="comment">
+                    <header class="comment-author">
+                        <img src="files/rwN0al9P6nYhGSQO-yIJb-FyF5xg-c2v61zjMom4c4E.png" alt="Commenter 1's avatar" class="avatar">
                         <span class="author-name">Commenter 1 • 14 hr. ago</span>
-                    </div>
+                    </header>
                     <p class="comment-text">This is a sample comment text.</p>
-                </div>
+                </article>
     
-                <div class="comment">
-                    <div class="comment-author">
-                        <img src="files/rwN0al9P6nYhGSQO-yIJb-FyF5xg-c2v61zjMom4c4E.png" alt="Commenter Avatar" class="avatar">
+                <article class="comment">
+                    <header class="comment-author">
+                        <img src="files/rwN0al9P6nYhGSQO-yIJb-FyF5xg-c2v61zjMom4c4E.png" alt="Commenter 2's avatar" class="avatar">
                         <span class="author-name">Commenter 2 • 14 hr. ago</span>
-                    </div>
+                    </header>
                     <p class="comment-text">Another comment here to show how it would look.</p>
-                </div>
-            </section>  
+                </article>
+            </section>
         </main>
-    </div> 
+    </div>
 </body>
 </html>
